@@ -6,7 +6,6 @@ import { loginOptions } from './command/login.js';
 import { sshOptions } from './command/ssh.js';
 
 const localhost = (host: string): boolean =>
-  process.getuid() === 0 &&
   (host === 'localhost' || host === '0.0.0.0' || host === '127.0.0.1');
 
 const urlArgs = (
